@@ -40,3 +40,12 @@ sqlplus TollySingers/tiger@ORCLPDB1;
 * so in jpa there is the entity which represents the table
 * there is the repository that allows you to interact with the table
 
+
+* you can go to the [swagger](http://localhost:8095/swagger-ui.html#) and interact with the endpoints there
+* [MVN Repository](https://mvnrepository.com/artifact/io.springfox/springfox-swagger2/2.9.2)
+* its a great way to find and get packages
+
+* you can use Jackson Dataformat XML dependency to change json to xml
+```java
+    @GetMapping(value = "/getSingleSinger/{id}",produces = {MediaType.APPLICATION_XML_VALUE})
+```
